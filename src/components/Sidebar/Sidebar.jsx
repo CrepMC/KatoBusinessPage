@@ -90,10 +90,10 @@ const Sidebar = () => {
           </button>
         </header>
         <nav>
-          <a href='#'>Trang chủ</a>
-          <a href='#'>Sản phẩm</a>
-          <a href='#'>Giỏ hàng</a>
-          <a href='#'>Liên hệ</a>
+          <a href='/'>Trang chủ</a>
+          <a href='/products'>Sản phẩm</a>
+          <a href='/about'>Giới thiệu</a>
+          <a href='/contact'>Liên hệ</a>
         </nav>
       </aside>
     </>

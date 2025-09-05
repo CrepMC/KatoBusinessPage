@@ -4,7 +4,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
+}
+
+.wrapper {
+  height: auto;
+  max-height: 1000000px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;                           /* nội dung chiếm hết phần còn lại */
+  overflow-y: hidden;
+}
+
+html, body {
+  /* height: 100%; */
+  margin: 0;
 }
 
 a {

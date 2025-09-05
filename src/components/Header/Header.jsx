@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <h1>Shop Online</h1>
+      <h1>KATO Shop</h1>
       <div className='search-input'>
         <input type='text' placeholder='Search...' />
         <button className='search-button'>
