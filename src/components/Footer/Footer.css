@@ -71,3 +71,9 @@ footer hr {
   color: #aaa;
   padding-top: 20px;
 }
+
+.license {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
