@@ -1,13 +1,87 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <!-- Bạn có thể thay thế bằng logo của mình -->
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="logo" width="140" height="auto" />
+  
+  <h1>
+    Kato Business Page
+  </h1>
+  
+  <p>
+    Một trang web landing page cho doanh nghiệp được xây dựng hiện đại, chuyên nghiệp bằng React và Vite. Nhanh, đẹp, và dễ dàng tùy chỉnh.
+  </p>
 
-Currently, two official plugins are available:
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/github/languages/top/CrepMC/KatoBusinessPage?style=for-the-badge" />
+    <img src="https://img.shields.io/github/last-commit/CrepMC/KatoBusinessPage?style=for-the-badge" />
+    <img src="https://img.shields.io/github/stars/CrepMC/KatoBusinessPage?style=for-the-badge" />
+  </p>
+   
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br />
 
-## Expanding the ESLint configuration
+## ✨ Tính năng nổi bật
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# KatoBusinessPage
+*   **🎨 Giao diện hiện đại:** Thiết kế sạch sẽ, chuyên nghiệp và hoàn toàn responsive trên mọi thiết bị.
+*   **⚡ Tốc độ cực nhanh:** Xây dựng trên nền tảng Vite mang lại trải nghiệm phát triển và tốc độ tải trang vượt trội.
+*   **🗺️ Tích hợp bản đồ:** Trang liên hệ với Google Maps giúp khách hàng dễ dàng tìm đến bạn.
+*   **🔧 Dễ dàng tùy chỉnh:** Cấu trúc code rõ ràng, dễ dàng thay đổi nội dung, màu sắc và hình ảnh.
+*   **🚀 Sẵn sàng để triển khai:** Tối ưu hóa cho production, chỉ cần build và deploy.
+
+## 🛠️ Công nghệ sử dụng
+
+*   **React**: Thư viện JavaScript mạnh mẽ để xây dựng giao diện người dùng.
+*   **Vite**: Công cụ build thế hệ mới cho trải nghiệm phát triển web nhanh hơn.
+*   **CSS**: Styling đơn giản và hiệu quả.
+
+## 🚀 Bắt đầu nào!
+
+Làm theo các bước sau để chạy dự án trên máy của bạn.
+
+### Yêu cầu
+
+*   Node.js (phiên bản 18.x trở lên)
+*   `npm` hoặc `yarn`
+
+### Cài đặt
+
+1.  Clone repository về máy:
+    ```sh
+    git clone https://github.com/CrepMC/KatoBusinessPage.git
+    ```
+2.  Di chuyển vào thư mục dự án:
+    ```sh
+    cd KatoBusinessPage
+    ```
+3.  Cài đặt các dependencies:
+    ```sh
+    npm install
+    ```
+4.  Chạy server development:
+    ```sh
+    npm run dev
+    ```
+    Mở trình duyệt và truy cập `http://localhost:5173` (hoặc cổng khác được hiển thị trên terminal).
+
+## 📜 Các câu lệnh có sẵn
+
+*   `npm run dev`: Chạy ứng dụng ở chế độ development.
+*   `npm run build`: Build ứng dụng cho môi trường production.
+*   `npm run lint`: Kiểm tra lỗi code với ESLint.
+*   `npm run preview`: Chạy bản build production trên local để kiểm tra.
+
+## 🤝 Đóng góp
+
+Mọi sự đóng góp đều được chào đón! Nếu bạn có ý tưởng để cải thiện dự án, vui lòng fork repo và tạo một Pull Request.
+
+1.  Fork dự án
+2.  Tạo branch mới cho tính năng của bạn (`git checkout -b feature/AmazingFeature`)
+3.  Commit thay đổi của bạn (`git commit -m 'Add some AmazingFeature'`)
+4.  Push lên branch (`git push origin feature/AmazingFeature`)
+5.  Mở một Pull Request
+
+## 📝 Giấy phép
+
+Dự án này được cấp phép theo **MIT License**. Xem file `LICENSE` để biết thêm chi tiết.
