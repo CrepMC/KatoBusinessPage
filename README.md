@@ -2,8 +2,8 @@
 
   <div>
     <!-- Bạn có thể thay thế bằng logo của mình -->
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React logo" width="140" height="auto" style="vertical-align: middle;"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" alt="Vite logo" width="100" height="auto" style="vertical-align: middle;"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React logo" width="140" height="auto"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" alt="Vite logo" width="100" height="auto"/>
   </div>
 
   <h1>
@@ -169,6 +169,7 @@ export default Footer;
 
 <details>
 <summary><b>src\components\Footer\Footer.css</b></summary>
+
 ```css
 footer {
   display: flex;
