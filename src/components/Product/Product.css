@@ -1,6 +1,10 @@
-.HomePage main .card {
+.product-card {
+  padding: 0 15px; /* Thêm padding để tạo khoảng cách giữa các slide */
+}
+
+.product-card .card {
   --font-color: #323232;
-  --font-color-sub: #666;
+  --font-color-sub: #6  66;
   --bg-color: #fff;
   --main-color: #323232;
   --main-focus: #2d8cf0;
@@ -20,18 +24,18 @@
   transition: transform 0.2s;
 }
 
-.HomePage main .card:hover {
+.product-card .card:hover {
   transform: translateY(-5px);
 }
 
 /* Ảnh */
-.HomePage main .card-img {
+.product-card .card-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.HomePage main .card-img img {
+.product-card .card-img img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -39,14 +43,14 @@
 }
 
 /* Title + subtitle */
-.HomePage main .card-title {
+.product-card .card-title {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: var(--font-color);
 }
 
-.HomePage main .card-subtitle {
+.product-card .card-subtitle {
   font-size: 14px;
   font-weight: 400;
   color: var(--font-color-sub);
@@ -54,33 +58,33 @@
 }
 
 /* Divider */
-.HomePage main .card-divider {
+.product-card .card-divider {
   width: 100%;
   border: 1px solid var(--main-color);
   border-radius: 50px;
 }
 
 /* Footer */
-.HomePage main .card-footer {
+.product-card .card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.HomePage main .card-price {
+.product-card .card-price {
   font-size: 18px;
   font-weight: 600;
   color: var(--font-color);
 }
 
-.HomePage main .card-price span {
+.product-card .card-price span {
   font-size: 16px;
   font-weight: 500;
   color: var(--font-color-sub);
 }
 
 /* Button */
-.HomePage main .card-btn {
+.product-card .card-btn {
   padding: 6px 12px;
   background: var(--bg-color);
   border: 2px solid var(--main-color);
@@ -90,7 +94,7 @@
   font-weight: 500;
 }
 
-.HomePage main .card-btn:hover {
+.product-card .card-btn:hover {
   background: var(--main-color);
   color: #fff;
 }

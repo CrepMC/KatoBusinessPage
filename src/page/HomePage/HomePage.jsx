@@ -1,9 +1,12 @@
-import { Header, Sidebar, Footer } from '../../components/';
-import { Link } from 'react-router-dom';
 import './HomePage.css';
 import KATOLogo from '../../assests/logo.png';
 import ProductCard from '../../components/Product/Product';
 import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+
+// Import CSS cho slider
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -13,6 +16,32 @@ const HomePage = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
+  // Cấu hình cho slider
+  const sliderSettings = {
+    dots: true, // Hiển thị dấu chấm điều hướng
+    infinite: true, // Vòng lặp vô tận
+    speed: 500, // Tốc độ chuyển slide (ms)
+    slidesToShow: 4, // Số sản phẩm hiển thị trên màn hình lớn
+    slidesToScroll: 1, // Số sản phẩm trượt mỗi lần
+    autoplay: true, // Tự động trượt
+    autoplaySpeed: 3000, // Thời gian giữa các lần trượt
+    responsive: [
+      {
+        breakpoint: 1024, // Màn hình tablet
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // Màn hình mobile
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <div className='HomePage'>
       <main>
@@ -46,12 +75,12 @@ const HomePage = () => {
           </div>
         </div>
         <div className='product-cards'>
-          <h1 className='products-title'>Products</h1>
-          <div className='product-list'>
+          <h1 className='products-title'>Sản phẩm nổi bật</h1>
+          <Slider {...sliderSettings} className='product-list'>
             {products.map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}
-          </div>
+          </Slider>
         </div>
       </main>
     </div>
