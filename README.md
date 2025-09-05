@@ -2,8 +2,8 @@
 
   <div>
     <!-- Bạn có thể thay thế bằng logo của mình -->
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React logo" width="140" height="auto" style="vertical-align: top;"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" alt="Vite logo" width="100" height="auto" style="vertical-align: top;"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React logo" width="140" height="100%" style="vertical-align: top;"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" alt="Vite logo" width="100" height="100%" style="vertical-align: top;"/>
   </div>
 
   <h1>
