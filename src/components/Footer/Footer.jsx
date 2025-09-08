@@ -54,12 +54,13 @@ const Footer = () => {
       <div className='copyright'>
         <p>&copy; {new Date().getFullYear()} KATO. All rights reserved.</p>
         <div className='license'>
-          <p>© 2025 Created by</p>
-          <span>&emsp;</span>
+          <p>
+            © 2025 Created by
+          </p>
           <a
             href='https://github.com/CrepMC'
             target='_blank'
-            style={{ color: 'inherit', textDecoration: 'none' }}
+            style={{ color: 'inherit', textDecoration: 'none', marginLeft: '4px' }}
           >
             CrepMC
           </a>

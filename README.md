@@ -17,29 +17,31 @@
   <!-- Badges -->
   <p>
     <img src="https://img.shields.io/github/languages/top/CrepMC/KatoBusinessPage?style=for-the-badge" />
+    <img src="https://img.shields.io/github/languages/count/CrepMC/KatoBusinessPage?style=for-the-badge
+    " />
+    <img src="https://img.shields.io/badge/Language-React-blue?style=for-the-badge&logo=react" />
     <img src="https://img.shields.io/github/last-commit/CrepMC/KatoBusinessPage?style=for-the-badge" />
     <img src="https://img.shields.io/github/stars/CrepMC/KatoBusinessPage?style=for-the-badge" />
   </p>
    
 </div>
-
 <br />
 
-## ✨ Tính năng nổi bật
+##  Tính năng nổi bật
 
-- **🎨 Giao diện hiện đại:** Thiết kế sạch sẽ, chuyên nghiệp và hoàn toàn responsive trên mọi thiết bị.
-- **⚡ Tốc độ cực nhanh:** Xây dựng trên nền tảng Vite mang lại trải nghiệm phát triển và tốc độ tải trang vượt trội.
-- **🗺️ Tích hợp bản đồ:** Trang liên hệ với Google Maps giúp khách hàng dễ dàng tìm đến bạn.
-- **🔧 Dễ dàng tùy chỉnh:** Cấu trúc code rõ ràng, dễ dàng thay đổi nội dung, màu sắc và hình ảnh.
-- **🚀 Sẵn sàng để triển khai:** Tối ưu hóa cho production, chỉ cần build và deploy.
+- **Giao diện hiện đại:** Thiết kế sạch sẽ, chuyên nghiệp và hoàn toàn responsive trên mọi thiết bị.
+- **Tốc độ cực nhanh:** Xây dựng trên nền tảng Vite mang lại trải nghiệm phát triển và tốc độ tải trang vượt trội.
+- **Tích hợp bản đồ:** Trang liên hệ với Google Maps giúp khách hàng dễ dàng tìm đến bạn.
+- **Dễ dàng tùy chỉnh:** Cấu trúc code rõ ràng, dễ dàng thay đổi nội dung, màu sắc và hình ảnh.
+- **Sẵn sàng để triển khai:** Tối ưu hóa cho production, chỉ cần build và deploy.
 
-## 🛠️ Công nghệ sử dụng
+##  Công nghệ sử dụng
 
 - **React**: Thư viện JavaScript mạnh mẽ để xây dựng giao diện người dùng.
 - **Vite**: Công cụ build thế hệ mới cho trải nghiệm phát triển web nhanh hơn.
 - **CSS**: Styling đơn giản và hiệu quả.
 
-## 🚀 Bắt đầu nào!
+##  Bắt đầu nào!
 
 Làm theo các bước sau để chạy dự án trên máy của bạn.
 
@@ -68,14 +70,14 @@ Làm theo các bước sau để chạy dự án trên máy của bạn.
     ```
     Mở trình duyệt và truy cập `http://localhost:5173` (hoặc cổng khác được hiển thị trên terminal).
 
-## 📜 Các câu lệnh có sẵn
+##  Các câu lệnh có sẵn
 
 - `npm run dev`: Chạy ứng dụng ở chế độ development.
 - `npm run build`: Build ứng dụng cho môi trường production.
 - `npm run lint`: Kiểm tra lỗi code với ESLint.
 - `npm run preview`: Chạy bản build production trên local để kiểm tra.
 
-## 🤝 Đóng góp
+##  Đóng góp
 
 Mọi sự đóng góp đều được chào đón! Nếu bạn có ý tưởng để cải thiện dự án, vui lòng fork repo và tạo một Pull Request.
 
@@ -85,7 +87,13 @@ Mọi sự đóng góp đều được chào đón! Nếu bạn có ý tưởng 
 4.  Push lên branch (`git push origin feature/AmazingFeature`)
 5.  Mở một Pull Request
 
-## 📝 Giấy phép
+##  Trạng thái
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=CrepMC&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CrepMC&layout=compact&theme=tokyonight)
+
+##  Giấy phép
 
 Dự án này được cấp phép theo một giấy phép tùy chỉnh. Vui lòng xem file `LICENSE.md` để biết các điều khoản và điều kiện chi tiết, đặc biệt là yêu cầu về ghi công cho tác giả.
 
