@@ -1,10 +1,16 @@
 .product-card {
+  margin: 20px 0;
   padding: 0 15px; /* Thêm padding để tạo khoảng cách giữa các slide */
+}
+
+.product-card .card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-card .card {
   --font-color: #323232;
-  --font-color-sub: #6  66;
+  --font-color-sub: #6 66;
   --bg-color: #fff;
   --main-color: #323232;
   --main-focus: #2d8cf0;

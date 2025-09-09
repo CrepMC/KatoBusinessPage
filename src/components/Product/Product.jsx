@@ -1,4 +1,5 @@
 import './Product.css';
+import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
   return (
@@ -15,6 +16,7 @@ const Product = ({ product }) => {
             <span>{product.price.toLocaleString()} VNĐ</span>
           </div>
         </div>
+        <Link to={`/product/${product.id}`} className='card-btn'>Chi tiết</Link>
       </div>
     </div>
   );
