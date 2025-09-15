@@ -1,106 +1,100 @@
 .product-card {
-  margin: 20px 0;
-  padding: 0 15px; /* Thêm padding để tạo khoảng cách giữa các slide */
-}
-
-.product-card .card-link {
-  text-decoration: none;
-  color: inherit;
+  width: 100%;
+  max-width: 280px;
 }
 
 .product-card .card {
-  --font-color: #323232;
-  --font-color-sub: #6 66;
-  --bg-color: #fff;
-  --main-color: #323232;
-  --main-focus: #2d8cf0;
-  width: 230px;
-  min-height: 320px;
-  background: var(--bg-color);
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 16px;
-  gap: 12px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  transition: transform 0.2s;
+  padding: 15px;
+  gap: 10px;
+  font-family: var(--font-body);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--color-text);
+  height: 100%;
 }
 
 .product-card .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Ảnh */
 .product-card .card-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding-top: 100%; /* Tạo tỷ lệ 1:1 cho ảnh */
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 .product-card .card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 6px;
 }
 
 /* Title + subtitle */
 .product-card .card-title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-align: center;
-  color: var(--font-color);
+  color: var(--color-text);
+  margin-top: 5px;
+  flex-grow: 1; /* Đẩy footer xuống dưới */
 }
 
 .product-card .card-subtitle {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--font-color-sub);
+  font-size: 0.9rem;
+  color: #777;
   text-align: center;
+  display: none; /* Ẩn đi cho giao diện gọn hơn, bạn có thể bật lại nếu muốn */
 }
 
 /* Divider */
 .product-card .card-divider {
   width: 100%;
-  border: 1px solid var(--main-color);
-  border-radius: 50px;
+  border: 0;
+  border-top: 1px solid #eee;
 }
 
 /* Footer */
 .product-card .card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .product-card .card-price {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--font-color);
-}
-
-.product-card .card-price span {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--font-color-sub);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
 }
 
 /* Button */
 .product-card .card-btn {
-  padding: 6px 12px;
-  background: var(--bg-color);
-  border: 2px solid var(--main-color);
-  border-radius: 6px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s;
-  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  text-align: center;
 }
 
 .product-card .card-btn:hover {
-  background: var(--main-color);
-  color: #fff;
+  background: #6aaa87; /* Màu đậm hơn của --color-primary */
 }

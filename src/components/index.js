@@ -4,4 +4,3 @@ export { default as Sidebar } from './Sidebar/Sidebar';
 export { default as Product } from './Product/Product';
 export { default as Button } from './Button/Button';
 export { default as Products } from './Products/Products';
-export { default as ProductPage } from '../page/ProductPage/ProductPage';

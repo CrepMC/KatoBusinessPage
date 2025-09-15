@@ -1,0 +1,65 @@
+.values-page-container {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  flex: 1;
+}
+
+.values-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.values-intro {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.7;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.value-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.value-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}

@@ -53,6 +53,11 @@ footer {
   transition: color 0.3s ease;
 }
 
+.main-content .contact p strong {
+  color: #ddd;
+  margin-right: 5px;
+}
+
 .main-content a:hover {
   color: #fff;
 }

@@ -1,6 +1,41 @@
 import './ContactPage.css';
 
 const ContactPage = () => {
+  const contactItems = [
+    {
+      icon: 'fa-solid fa-location-dot',
+      label: 'Trụ sở:',
+      content: 'Số 164 đường Ngô Xuân Quảng, Trâu Quỳ, Gia Lâm, Hà Nội, Vietnam',
+    },
+    {
+      icon: 'fa-solid fa-phone',
+      label: 'ĐT:',
+      content: <a href='tel:0979021450'>0979 021 450</a>,
+    },
+    {
+      icon: 'fa-solid fa-globe',
+      label: 'Website:',
+      content: (
+        <a href='https://kato.net.vn' target='_blank' rel='noreferrer'>
+          kato.net.vn
+        </a>
+      ),
+    },
+    {
+      icon: 'fa-brands fa-facebook',
+      label: 'Fanpage:',
+      content: (
+        <a
+          href='https://facebook.com/katotrauquy'
+          target='_blank'
+          rel='noreferrer'
+        >
+          KATOShop
+        </a>
+      ),
+    },
+  ];
+
   return (
     <div className='ContactPage'>
       <div className='contact-container'>
@@ -13,67 +48,17 @@ const ContactPage = () => {
         <div className='contact-content'>
           <div className='contact-info'>
             <h3>Thông tin liên lạc</h3>
-            <table className='contact-table'>
-              <tbody>
-                <tr>
-                  <td className='r1'>
-                    <i className='fa-solid fa-location-dot'></i>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <strong>Trụ sở:</strong>
-                  </td>
-                  <td>
-                    Số 164 đường Ngô Xuân Quảng, Trâu Quỳ, Gia Lâm, Hà Nội,
-                    Vietnam
-                  </td>
-                </tr>
-                <tr>
-                  <td className='r1'>
-                    <i className='fa-solid fa-phone'></i>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <strong>ĐT:</strong>
-                  </td>
-                  <td>
-                    <a href='tel:0979021450'>0979 021 450</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className='r1'>
-                    <i className='fa-solid fa-globe'></i>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <strong>Website:</strong>
-                  </td>
-                  <td>
-                    <a
-                      href='https://kato.net.vn'
-                      target='_blank'
-                      rel='noreferrer'
-                    >
-                      kato.net.vn
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className='r1'>
-                    <i className='fa-brands fa-facebook'></i>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <strong>Fanpage:</strong>
-                  </td>
-                  <td>
-                    <a
-                      href='https://facebook.com/KATOShop'
-                      target='_blank'
-                      rel='noreferrer'
-                    >
-                      KATOShop
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className='contact-list'>
+              {contactItems.map((item, index) => (
+                <div className='contact-item' key={index}>
+                  <i className={item.icon}></i>
+                  <div className='contact-item-content'>
+                    <strong>{item.label}</strong>
+                    <span>{item.content}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className='contact-map'>
             <iframe

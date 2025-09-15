@@ -2,54 +2,105 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
-  background: #6b8e23;
-  background: linear-gradient(
-    90deg,
-    rgba(107, 142, 35, 1) 0%,
-    rgba(169, 183, 125, 1) 50%,
-    rgba(143, 188, 143, 1) 100%
-  );
-  border-bottom: 1px solid #555;
+  height: 90px; 
+  border-bottom: 2px solid #e0e0e0;
+  padding: 0 50px;
 }
 
 header h1 {
   align-items: center;
   height: 65%;
+  font-size: 2.5rem;
+  color: var(--color-text);
+  font-weight: 700;
 }
 
 .header-navigate {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 35%;
-  gap: 15px
+  gap: 30px;
 }
 
 .header-navigate a {
-  color: #1100ff;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header-navigate a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.header-navigate a:hover::after {
+  width: 100%;
 }
 
 .search-input {
   display: flex;
   align-items: center;
-  background-color: white;
-  padding: 10px 0 10px 10px;
-  height: 40px;
+  background-color: #fff;
+  padding: 8px 15px;
   width: 350px;
-  border-radius: 15px;
-  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus-within {
+  box-shadow: 0 0 0 2px var(--color-primary);
 }
 
 .search-input input {
   border: none;
   outline: none;
   width: 100%;
+  background: transparent;
+  font-size: 1rem;
 }
 
 .search-button {
-  height: 200px;
-  padding: 0 10px 0 10px;
   background: none;
-  border-right: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  padding: 0 5px;
+}
+
+.header-handle {
+  display: flex;
+  gap: 20px;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 1080px) {
+  .main-header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .header-navigate {
+    gap: 15px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+  
+  .header-handle {
+    gap: 15px;
+    flex-direction: column-reverse;
+  }
 }

@@ -10,18 +10,54 @@
 
 .HomePage main .banner {
   display: flex;
-  /* align-items: center;
-    justify-content: space-evenly; */
-  font-size: 20px;
-  height: 450px;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
   padding: 50px;
   gap: 40px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border-radius: 0px 0px 50px 50px;
+  width: 95%;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .HomePage main .banner {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+    .HomePage main .banner .banner-text {
+    height: 80%;
+  }
+
+  .HomePage main .banner .img-card {
+    height: 20%;
+  }
+}
+
+
+.HomePage main .banner:hover {
+  transform: translate(0px, -5px);
+  box-shadow: 2px 2px 50px rgb(177, 177, 177);
+}
+
+.HomePage main .banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomePage main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15%;
+  flex: 1;
 }
 
 .HomePage main .banner:hover {
@@ -51,18 +87,74 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-radius: 10px;
 }
 
 .HomePage main .banner .img-card img {
   object-fit: cover;
   width: 100%;
+  object-fit: cover;
+}
+
+.HomePage main .product-cards {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.HomePage main .products-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.HomePage main .product-list {
+  width: 100%;
+}
+
+/* Tùy chỉnh mũi tên của Slider */
+.HomePage main .product-list .slick-prev,
+.HomePage main .product-list .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.HomePage main .product-list .slick-prev:before,
+.HomePage main .product-list .slick-next:before {
+  font-size: 20px;
+  color: #333;
+}
+
+.HomePage main .product-list .slick-prev {
+  left: -50px; /* Đẩy mũi tên ra ngoài một chút */
+}
+.HomePage main .product-list .slick-next {
+  right: -50px; /* Đẩy mũi tên ra ngoài một chút */
+}
+
+
+.HomePage main .banner .img-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.HomePage main .banner .img-card img {
+  object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .HomePage main .about-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: auto;
   padding: 50px;
   gap: 40px;
   width: 95%;
@@ -88,7 +180,15 @@
 .HomePage main .about-card .about-card-img {
   display: flex;
   width: 30%;
+  height: 100%;
   border: 1px #929292 solid;
+  border-radius: 10px;
+}
+
+.HomePage main .about-card .about-card-img img {
+  width: 100%;;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .HomePage main .product-cards {

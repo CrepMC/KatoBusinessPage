@@ -2,65 +2,89 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const productLinks = [
+    { to: '/products', text: 'Tất cả sản phẩm' },
+    { to: '/products?category=shoes', text: 'Giày' },
+    { to: '/products?category=apparel', text: 'Trang phục' },
+    { to: '/products?category=accessories', text: 'Phụ kiện' },
+  ];
+
+  const helpLinks = [
+    { to: '/faq', text: 'FAQ' },
+    { to: '/contact', text: 'Liên hệ' },
+    { to: '/shipping', text: 'Vận chuyển & Đổi trả' },
+  ];
+
   return (
     <footer>
       <div className='main-content'>
         <div className='about'>
-          <h3>About Us</h3>
+          <h3>Về chúng tôi</h3>
           <p>
-            KATO is a fashion brand with a vintage-retro style, specializing in
-            genuine leather shoes and apparel.
+            KATO là thương hiệu thời trang mang đậm phong cách vintage – retro,
+            chuyên về giày da thật và các sản phẩm may mặc.
           </p>
         </div>
         <div className='products'>
-          <h3>Products</h3>
+          <h3>Sản phẩm</h3>
           <ul>
-            <li>
-              <Link to='/products'>All Products</Link>
-            </li>
-            <li>
-              <Link to='/products/shoes'>Shoes</Link>
-            </li>
-            <li>
-              <Link to='/products/apparel'>Apparel</Link>
-            </li>
-            <li>
-              <Link to='/products/accessories'>Accessories</Link>
-            </li>
+            {productLinks.map((link, index) => (
+              <li key={index}>
+                <Link to={link.to}>{link.text}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className='help'>
-          <h3>Help</h3>
+          <h3>Hỗ trợ</h3>
           <ul>
-            <li>
-              <Link to='/faq'>FAQ</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact Us</Link>
-            </li>
-            <li>
-              <Link to='/shipping'>Shipping & Returns</Link>
-            </li>
+            {helpLinks.map((link, index) => (
+              <li key={index}>
+                <Link to={link.to}>{link.text}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className='contact'>
-          <h3>Contact</h3>
-          <p>123 Vintage St, Retro City</p>
-          <p>Email: contact@kato.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <h3>Liên hệ</h3>
+          <p>
+            <strong>Trụ sở:</strong> Số 164 đường Ngô Xuân Quảng, Trâu Quỳ, Gia
+            Lâm, Hà Nội
+          </p>
+          <p>
+            <strong>ĐT:</strong> <a href='tel:0979021450'>0979 021 450</a>
+          </p>
+          <p>
+            <strong>Website:</strong>{' '}
+            <a href='https://kato.net.vn' target='_blank' rel='noreferrer'>
+              kato.net.vn
+            </a>
+          </p>
+          <p>
+            <strong>Fanpage:</strong>{' '}
+            <a
+              href='https://facebook.com/katotrauquy'
+              target='_blank'
+              rel='noreferrer'
+            >
+              KATOShop
+            </a>
+          </p>
         </div>
       </div>
       <hr />
       <div className='copyright'>
-        <p>&copy; {new Date().getFullYear()} KATO. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} KATO. Đã đăng ký bản quyền.</p>
         <div className='license'>
-          <p>
-            © 2025 Created by
-          </p>
+          <p>© 2025 Tạo bởi</p>
           <a
             href='https://github.com/CrepMC'
             target='_blank'
-            style={{ color: 'inherit', textDecoration: 'none', marginLeft: '4px' }}
+            style={{
+              color: 'inherit',
+              textDecoration: 'none',
+              marginLeft: '4px',
+            }}
           >
             CrepMC
           </a>

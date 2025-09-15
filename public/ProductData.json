@@ -1,72 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Giày sneaker",
-    "price": 1200000,
-    "image": "/images/sneaker.jpg",
-    "desc": "Giày sneaker thời trang"
+    "name": "Sản phẩm mẫu 1",
+    "price": "100.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+1"
   },
   {
     "id": 2,
-    "name": "Áo hoodie",
-    "price": 550000,
-    "image": "/images/hoodie.jpg",
-    "desc": "Áo hoodie phong cách"
+    "name": "Sản phẩm mẫu 2",
+    "price": "250.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+2"
   },
   {
     "id": 3,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 3",
+    "price": "300.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+3"
   },
   {
     "id": 4,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 4",
+    "price": "120.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+4"
   },
   {
     "id": 5,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 5",
+    "price": "500.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+5"
   },
   {
     "id": 6,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 6",
+    "price": "500.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+6"
   },
   {
     "id": 7,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 7",
+    "price": "500.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+7"
   },
   {
     "id": 8,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
-  },
-  {
-    "id": 9,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
-  },
-  {
-    "id": 10,
-    "name": "Balo thời trang",
-    "price": 750000,
-    "image": "/images/bag.jpg",
-    "desc": "Balo thời trang cho giới trẻ"
+    "name": "Sản phẩm mẫu 8",
+    "price": "500.000đ",
+    "image": "https://placehold.co/300x300?text=Sản+phẩm+8"
   }
 ]

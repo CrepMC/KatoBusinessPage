@@ -1,0 +1,120 @@
+.process-page-container {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  flex: 1;
+}
+
+.process-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.process-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.7;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.step-number {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.step-icon-container i {
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+}
+
+.step-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.step-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Add decorative lines for steps */
+.process-steps {
+  position: relative;
+  padding-left: 20px;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  left: 58px; /* (40px width + 30px gap / 2) + 20px padding */
+  top: 20px;
+  bottom: 20px;
+  width: 4px;
+  background-color: #eee;
+  transform: translateX(-50%);
+}
+
+.step-card {
+  padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+  .step-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .process-steps::before {
+    display: none; /* Hide line on mobile for simplicity */
+  }
+  .process-steps, .step-card {
+    padding-left: 0;
+  }
+}

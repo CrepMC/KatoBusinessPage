@@ -1,0 +1,141 @@
+.story-page-container {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  flex: 1;
+}
+
+.story-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.story-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.7;
+}
+
+/* Timeline styles */
+.story-timeline {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+  width: 50%;
+  padding-right: 50px;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.timeline-item.reverse {
+  align-self: flex-end;
+  padding-left: 50px;
+  padding-right: 0;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px #fff;
+  width: 74px;
+  text-align: center;
+}
+
+.timeline-item .timeline-year {
+  right: -38px;
+}
+
+.timeline-item.reverse .timeline-year {
+  left: -38px;
+  right: auto; /* unset the right property */
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 8px 30px rgb(0, 0, 0, 0.32);
+}
+
+.timeline-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.timeline-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .story-timeline::before {
+    left: 20px;
+  }
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0;
+    justify-content: flex-start;
+    text-align: left;
+    align-self: auto;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-left: 70px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .timeline-year,
+  .timeline-item:nth-child(odd) .timeline-year,
+  .timeline-item:nth-child(even) .timeline-year {
+    left: -15px;
+  }
+}

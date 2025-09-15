@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import './ProductPage.css';
-import ProductCard from '../../components/Product/Product';
+import ProductSlider from '../../components/ProductSlider/ProductSlider';
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -52,7 +52,7 @@ const ProductPage = () => {
     return allProducts
       .filter((p) => p.id !== product.id)
       .sort(() => 0.5 - Math.random()) // Trộn ngẫu nhiên để gợi ý đa dạng hơn
-      .slice(0, 4);
+      .slice(0, 8);
   }, [product, allProducts]);
 
   if (loading) {
@@ -84,11 +84,7 @@ const ProductPage = () => {
 
       <div className='suggested-products'>
         <h2>Sản phẩm khác</h2>
-        <div className='suggested-list'>
-          {suggestedProducts.map((item) => (
-            <ProductCard key={item.id} product={item} />
-          ))}
-        </div>
+        <ProductSlider productsToShow={suggestedProducts} />
       </div>
     </div>
   );

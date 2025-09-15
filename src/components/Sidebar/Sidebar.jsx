@@ -79,7 +79,7 @@ const Sidebar = () => {
         aria-labelledby='sidebarTitle'
         hidden
       >
-        <header>
+        <header className='sidebar-header'>
           <h2 id='sidebarTitle'>Menu</h2>
           <button
             className='close-btn'
@@ -94,6 +94,7 @@ const Sidebar = () => {
           <a href='/products'>Sản phẩm</a>
           <a href='/about'>Giới thiệu</a>
           <a href='/contact'>Liên hệ</a>
+          <a href='/faq'>FAQ</a>
         </nav>
       </aside>
     </>
