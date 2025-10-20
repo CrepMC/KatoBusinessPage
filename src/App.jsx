@@ -18,7 +18,7 @@ import Layout from './Layout/Layout';
 
 const App = () => {
   return (
-    <Layout>
+    <Layout className='vintage'>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/products' element={<ProductsPage />} />

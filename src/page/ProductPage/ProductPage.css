@@ -20,6 +20,7 @@
   display: flex;
   gap: 40px;
   margin-bottom: 60px;
+  max-height: 500px;
 }
 
 .product-image-section {
@@ -27,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 .product-image-section img {
@@ -34,6 +36,7 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  object-fit: scale-down;
 }
 
 .product-info-section {
@@ -49,7 +52,6 @@
   color: var(--color-text);
   margin-bottom: 15px;
 }
-
 
 .product-description {
   font-size: 1.1rem;
@@ -95,7 +97,6 @@
   margin-bottom: 40px;
   color: var(--color-text);
 }
-
 
 .suggested-list {
   /* CSS cho react-slick slider */

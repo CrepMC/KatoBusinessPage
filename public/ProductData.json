@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Sản phẩm mẫu 1",
-    "price": "100.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+1"
+    "name": "Chân váy",
+    "image": "/productImages/skirt.jpg",
+    "desc": "Chân váy vintage, từ dáng chữ A đến bút chì hay xếp ly, dễ phối với áo sơ mi hoặc áo basic để tạo set đồ thanh lịch, đậm chất retro."
   },
   {
     "id": 2,
-    "name": "Sản phẩm mẫu 2",
-    "price": "250.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+2"
+    "name": "Váy dài",
+    "image": "/productImages/dress.jpg",
+    "desc": "Váy liền thân với đường cắt và chi tiết mang hơi hướng cổ điển, tôn dáng và mang lại sự nữ tính đặc trưng của phong cách vintage."
   },
   {
     "id": 3,
-    "name": "Sản phẩm mẫu 3",
-    "price": "300.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+3"
+    "name": "Bốt",
+    "image": "/productImages/boots.jpg",
+    "desc": "Những đôi bốt mang lại vẻ ngoài cá tính và chắc chắn, phù hợp cho cả phong cách thanh lịch lẫn năng động. Chất liệu bền đẹp, dễ kết hợp cùng quần jeans, váy hoặc áo khoác."
   },
   {
     "id": 4,
-    "name": "Sản phẩm mẫu 4",
-    "price": "120.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+4"
+    "name": "Sandal",
+    "image": "/productImages/sandal.jpg",
+    "desc": "Sandals mang hơi thở vintage, thiết kế tối giản nhưng tinh tế, thích hợp cho những set đồ thoải mái, nhẹ nhàng và mang chút phóng khoáng retro."
   },
   {
     "id": 5,
-    "name": "Sản phẩm mẫu 5",
-    "price": "500.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+5"
+    "name": "Áo",
+    "image": "/productImages/shirt.jpg",
+    "desc": "Các kiểu áo mặc thường ngày mang phong cách vintage — từ dáng basic đến thiết kế cách điệu, dễ phối cùng quần hoặc váy để tạo nên vẻ ngoài cổ điển nhưng vẫn thời thượng."
   },
   {
     "id": 6,
-    "name": "Sản phẩm mẫu 6",
-    "price": "500.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+6"
+    "name": "Giày",
+    "image": "/productImages/shoes.jpg",
+    "desc": "Mô tả: Bộ sưu tập giày mang phong cách vintage — từ sneaker, giày da đến loafer — vừa thoải mái vừa làm nổi bật cá tính cổ điển trong từng bước đi."
   },
   {
     "id": 7,
-    "name": "Sản phẩm mẫu 7",
-    "price": "500.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+7"
+    "name": "Áo khoác",
+    "image": "/productImages/outerwear.jpg",
+    "desc": "Áo khoác vintage với chất liệu và phom dáng cổ điển, vừa giữ ấm vừa là điểm nhấn giúp hoàn thiện outfit theo phong cách retro tinh tế."
   },
   {
     "id": 8,
-    "name": "Sản phẩm mẫu 8",
-    "price": "500.000đ",
-    "image": "https://placehold.co/300x300?text=Sản+phẩm+8"
+    "name": "Quần dài",
+    "image": "/productImages/pants.jpg",
+    "desc": "Những mẫu quần dài đa dạng kiểu dáng như ống đứng, ống rộng, quần tây hay denim, mang tinh thần hoài cổ và dễ dàng kết hợp cho nhiều phong cách vintage."
   }
 ]

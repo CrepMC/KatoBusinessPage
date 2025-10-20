@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
   return (
-    <div className='product-card'>
+    <div className='product-card vintage-card'>
       <Link to={`/product/${product.id}`} className='card'>
         <div className='card-img'>
           <img src={product.image} alt={product.name} className='product-img' />
@@ -11,11 +11,6 @@ const Product = ({ product }) => {
         <div className='card-title'>{product.name}</div>
         <div className='card-subtitle'>{product.desc}</div>
         <hr className='card-divider' />
-        <div className='card-footer'>
-          <div className='card-price'>
-            {product.price.toLocaleString('vi-VN')} VNĐ
-          </div>
-        </div>
       </Link>
     </div>
   );

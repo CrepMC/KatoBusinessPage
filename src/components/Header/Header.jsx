@@ -13,7 +13,9 @@ const Header = () => {
 
   return (
     <header className='main-header'>
-      <h1>KATO Shop</h1>
+      <Link to="/">
+        <h1>KATO Shop</h1>
+      </Link>
       <div className='header-handle'>
         <div className='search-input'>
           <input type='text' placeholder='Search...' />

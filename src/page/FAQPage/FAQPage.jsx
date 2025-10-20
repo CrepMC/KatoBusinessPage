@@ -35,7 +35,7 @@ const FAQPage = () => {
   }, []);
 
   return (
-    <div className='faq-page'>
+    <div className='faq-page vintage-card'>
       <div className='faq-container'>
         <h1 className='faq-title'>Các câu hỏi thường gặp (FAQ)</h1>
         <div className='faq-list'>

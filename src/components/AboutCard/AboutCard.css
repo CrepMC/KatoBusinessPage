@@ -52,13 +52,16 @@
 
 .read-more-link {
   font-weight: 700;
+
   color: var(--color-secondary);
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .read-more-link:hover {
-  color: #c95a3f;
+  border-radius: 4px;
+  padding: 5px;
+  color: #ffcdc0;
   text-decoration: none;
 }
 

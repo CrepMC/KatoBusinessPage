@@ -12,7 +12,7 @@ const AboutCard = ({
   reverse,
 }) => {
   return (
-    <section className={`about-card ${reverse ? 'reverse' : ''}`}>
+    <section className={`about-card vintage-card ${reverse ? 'reverse' : ''}`}>
       <div className='about-card-image'>
         <img src={imageUrl} alt={altText} />
       </div>

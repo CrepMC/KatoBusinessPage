@@ -11,7 +11,7 @@ const MissionPage = () => {
       <div className='mission-content'>
         <h1 className='page-title'>Sứ Mệnh & Tầm Nhìn</h1>
 
-        <div className='mission-card'>
+        <div className='mission-card vintage-card'>
           <div className='mission-icon'>
             <i className='fa-solid fa-rocket'></i>
           </div>
@@ -27,7 +27,7 @@ const MissionPage = () => {
           </div>
         </div>
 
-        <div className='vision-card'>
+        <div className='vision-card vintage-card'>
           <div className='vision-text'>
             <h2>Tầm Nhìn Đến 2030</h2>
             <p>

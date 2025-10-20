@@ -7,7 +7,7 @@ const StoryPage = () => {
   }, []);
 
   return (
-    <div className='story-page-container'>
+    <div className='story-page-container vintage-card'>
       <div className='story-content'>
         <h1 className='page-title'>Hành Trình Của KATO</h1>
         <p className='story-intro'>

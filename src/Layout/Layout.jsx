@@ -3,7 +3,7 @@ import './Layout.css'
 
 const Layout = ({children}) => {
   return (
-    <div className='wrapper'>
+    <div className='wrapper vintage'>
       <Header />
       <div className='main-area'>
         <Sidebar />

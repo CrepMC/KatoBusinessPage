@@ -1,232 +1,155 @@
-.HomePage main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 15%;
-  flex: 1;
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display&family=Special+Elite&display=swap');
+
+/* Background với texture giấy cũ */
+.HomePage.vintage {
+  background: url("https://www.transparenttextures.com/patterns/aged-paper.png");
+  background-color: #f4ecd8;
+  font-family: "Playfair Display", serif;
+  color: #3a2e2a;
+  line-height: 1.8;
+  min-height: 100vh;
 }
 
+/* Retro heading */
+.vintage-title {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #4a2c2a;
+  position: relative;
+  text-align: center;
+}
+
+.vintage-title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #a67c52;
+  display: block;
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Card phong cách retro */
+.vintage-card {
+  background: rgba(255, 250, 240, 0.95);
+  border: 2px solid #b18f6a;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0px 8px 25px rgba(80, 60, 40, 0.25);
+  transition: all 0.3s ease;
+  margin: 60px;
+}
+
+.vintage-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 12px 35px rgba(60, 40, 20, 0.4);
+}
+
+/* Banner layout */
 .HomePage main .banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+  gap: 50px;
   padding: 50px;
-  gap: 40px;
-  width: 95%;
-  transition: transform 0.3s ease;
-  border-radius: 50px;
-}
-
-@media (max-width: 768px) {
-  .HomePage main .banner {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px;
-  }
-    .HomePage main .banner .banner-text {
-    height: 80%;
-  }
-
-  .HomePage main .banner .img-card {
-    height: 20%;
-  }
-}
-
-
-.HomePage main .banner:hover {
-  transform: translate(0px, -5px);
-  box-shadow: 2px 2px 50px rgb(177, 177, 177);
-}
-
-.HomePage main .banner .banner-text {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.HomePage main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 15%;
-  flex: 1;
-}
-
-.HomePage main .banner:hover {
-  transform: translate(0px, -5px);
-  box-shadow: 2px 2px 50px rgb(177, 177, 177);
-}
-
-.HomePage main .banner .banner-text {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.HomePage main .banner .banner-text p {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.HomePage main .banner .img-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 10px;
 }
 
 .HomePage main .banner .img-card img {
-  object-fit: cover;
-  width: 100%;
-  object-fit: cover;
+  width: 280px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px double #8b5e3c;
+  background: #f4ecd8;
+  filter: sepia(0.4) contrast(0.9);
+  transition: all 0.3s ease;
 }
 
+.HomePage main .banner .img-card img:hover {
+  filter: sepia(0.6) contrast(1.1) brightness(1.05);
+  transform: rotate(-2deg) scale(1.05);
+}
+
+.inbanner-text {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* Retro text */
+.vintage-text {
+  font-family: "Special Elite", cursive;
+  font-size: 1.2rem;
+  color: #3e2e28;
+  background: #fff9f2;
+  padding: 25px;
+  border: 1px dashed #b18f6a;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 8px rgba(100, 80, 60, 0.2);
+  text-align: center;
+}
+
+/* Product cards */
 .HomePage main .product-cards {
   width: 90%;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
-.HomePage main .products-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.HomePage main .product-list {
-  width: 100%;
-}
-
-/* Tùy chỉnh mũi tên của Slider */
 .HomePage main .product-list .slick-prev,
 .HomePage main .product-list .slick-next {
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 45px;
+  height: 45px;
+  background-color: #fff7eb;
+  border: 2px solid #8b5e3c;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(60, 40, 20, 0.3);
 }
 
 .HomePage main .product-list .slick-prev:before,
 .HomePage main .product-list .slick-next:before {
   font-size: 20px;
-  color: #333;
+  color: #4a2c2a;
 }
 
-.HomePage main .product-list .slick-prev {
-  left: -50px; /* Đẩy mũi tên ra ngoài một chút */
-}
-.HomePage main .product-list .slick-next {
-  right: -50px; /* Đẩy mũi tên ra ngoài một chút */
-}
-
-
-.HomePage main .banner .img-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 10px;
-}
-
-.HomePage main .banner .img-card img {
-  object-fit: cover;
-  width: 100%;
-  object-fit: cover;
-}
-
+/* AboutCard styling */
 .HomePage main .about-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  padding: 50px;
-  gap: 40px;
-  width: 95%;
-  transition: transform 0.3s ease;
-  border-radius: 50px;
-  /* margin: 20px 20px 20px 20px; */
-}
-
-.HomePage main .about-card .about-card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  gap: 40px;
+  background: rgba(255, 248, 230, 0.95);
+  border: 2px solid #c1a174;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 6px 20px rgba(70, 50, 30, 0.2);
+  transition: 0.3s;
 }
 
 .HomePage main .about-card:hover {
-  transform: translate(0px, -5px);
-  box-shadow: 2px 2px 50px rgb(177, 177, 177);
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(60, 40, 20, 0.35);
 }
 
-.HomePage main .about-card .about-card-img {
-  display: flex;
-  width: 30%;
-  height: 100%;
-  border: 1px #929292 solid;
-  border-radius: 10px;
+.HomePage main .about-card .about-card-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #3a2e2a;
 }
 
-.HomePage main .about-card .about-card-img img {
-  width: 100%;;
-  object-fit: cover;
-  border-radius: 10px;
-}
+/* Retro buttons (nếu có link/button) */
+/* a, .retro-btn {
+  font-family: "Cinzel", serif;
+  background: #a67c52;
+  color: #fffdf7;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 2px solid #7c5531;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+} */
 
-.HomePage main .product-cards {
-  width: 90%;
-  margin: 40px auto;
-}
-
-.HomePage main .products-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.HomePage main .product-list {
-  width: 100%;
-}
-
-/* Tùy chỉnh mũi tên của Slider */
-.HomePage main .product-list .slick-prev,
-.HomePage main .product-list .slick-next {
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.HomePage main .product-list .slick-prev:before,
-.HomePage main .product-list .slick-next:before {
-  font-size: 20px;
-  color: #333;
-}
-
-.HomePage main .product-list .slick-prev {
-  left: -50px; /* Đẩy mũi tên ra ngoài một chút */
-}
-.HomePage main .product-list .slick-next {
-  right: -50px; /* Đẩy mũi tên ra ngoài một chút */
-}
+/* a:hover, .retro-btn:hover {
+  background: #7c5531;
+  border-color: #4a2c2a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 20, 10, 0.3);
+} */

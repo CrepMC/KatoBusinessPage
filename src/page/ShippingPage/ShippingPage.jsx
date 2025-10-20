@@ -7,7 +7,7 @@ const ShippingPage = () => {
   }, []);
 
   return (
-    <div className='shipping-page-container'>
+    <div className='shipping-page-container vintage-card'>
       <div className='shipping-content'>
         <h1 className='page-title'>Chính sách Vận chuyển & Đổi trả</h1>
 

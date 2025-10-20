@@ -18,7 +18,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+}
+
+.product-grid .product-card {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  max-width: calc(25% - 20px); 
 }
 
 .loading-message,

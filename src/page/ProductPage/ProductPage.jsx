@@ -69,16 +69,13 @@ const ProductPage = () => {
 
   return (
     <div className='ProductPage'>
-      <div className='product-detail-container'>
+      <div className='product-detail-container vintage-card'>
         <div className='product-image-section'>
           <img src={product.image} alt={product.name} />
         </div>
         <div className='product-info-section'>
           <h1 className='product-name'>{product.name}</h1>
           <p className='product-description'>{product.desc}</p>
-          <p className='product-price'>
-            {product.price.toLocaleString('vi-VN')} VNĐ
-          </p>
         </div>
       </div>
 

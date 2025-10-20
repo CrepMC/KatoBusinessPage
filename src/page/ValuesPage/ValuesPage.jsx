@@ -28,7 +28,7 @@ const ValuesPage = () => {
   ];
 
   return (
-    <div className='values-page-container'>
+    <div className='values-page-container vintage-card'>
       <div className='values-content'>
         <h1 className='page-title'>Giá Trị Cốt Lõi</h1>
         <p className='values-intro'>

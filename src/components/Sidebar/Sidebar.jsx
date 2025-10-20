@@ -72,7 +72,7 @@ const Sidebar = () => {
       <div className='overlay' ref={overlayRef} hidden></div>
 
       <aside
-        className='sidebar'
+        className='sidebar vintage-card side'
         ref={sidebarRef}
         role='dialog'
         aria-modal='true'
