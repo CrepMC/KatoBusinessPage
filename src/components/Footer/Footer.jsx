@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const productLinks = [
     { to: '/products', text: 'Tất cả sản phẩm' },
-    { to: '/products?category=shoes', text: 'Giày' },
+    { to: '/products?category=shoes-sandal', text: 'Giày dép' },
     { to: '/products?category=apparel', text: 'Trang phục' },
-    { to: '/products?category=accessories', text: 'Phụ kiện' },
   ];
 
   const helpLinks = [
     { to: '/faq', text: 'FAQ' },
     { to: '/contact', text: 'Liên hệ' },
     { to: '/shipping', text: 'Vận chuyển & Đổi trả' },
+    { to: '/privacy-policy', text: 'Chính sách bảo mật' }
   ];
 
   return (
@@ -24,6 +24,9 @@ const Footer = () => {
             KATO là thương hiệu thời trang mang đậm phong cách vintage – retro,
             chuyên về giày da thật và các sản phẩm may mặc.
           </p>
+          <li>
+            <Link to='/about'>Xem thêm ...</Link>
+          </li>
         </div>
         <div className='products'>
           <h3>Sản phẩm</h3>

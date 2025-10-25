@@ -5,12 +5,13 @@ const ContactPage = () => {
     {
       icon: 'fa-solid fa-location-dot',
       label: 'Trụ sở:',
-      content: 'Số 164 đường Ngô Xuân Quảng, Trâu Quỳ, Gia Lâm, Hà Nội, Vietnam',
+      content:
+        'Số 164 đường Ngô Xuân Quảng, Trâu Quỳ, Gia Lâm, Hà Nội, Vietnam',
     },
     {
       icon: 'fa-solid fa-phone',
       label: 'ĐT:',
-      content: <a href='tel:0979021450'>0979 021 450</a>,
+      content: <a href='tel:098 669 70 86'>098 669 70 86</a>,
     },
     {
       icon: 'fa-solid fa-globe',

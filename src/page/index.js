@@ -10,4 +10,5 @@ export { default as StoryPage } from './StoryPage/StoryPage';
 export { default as MissionPage } from './MissionPage/MissionPage';
 export { default as ValuesPage } from './ValuesPage/ValuesPage';
 export { default as ProcessPage } from './ProcessPage/ProcessPage';
-
+export { default as PrivacyPolicy } from './PrivacyPolicy/PrivacyPolicy'
+// export { default as TeamPage } from './Team/TeamPage'

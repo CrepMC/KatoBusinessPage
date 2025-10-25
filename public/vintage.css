@@ -2,11 +2,11 @@
    Vintage Theme Styles
    ========================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Base vintage class */
 .vintage {
-  font-family: 'Special Elite', 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fdf6e3;
   color: #3e2f1c;
   line-height: 1.6;
@@ -23,7 +23,7 @@
 
 /* Vintage heading */
 .vintage-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   color: #5c3d2e;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -60,7 +60,7 @@
 
 /* Vintage text */
 .vintage-text {
-  font-family: 'Special Elite', serif;
+  font-family: 'Roboto', sans-serif;
   color: #3e2f1c;
   font-size: 1.05rem;
 }
@@ -69,7 +69,7 @@
 .vintage-link {
   color: #8b5e3c;
   text-decoration: none;
-  border-bottom: 1px dashed #8b5e3c;
+  border-bottom: 1px solid #8b5e3c;
   transition: color 0.3s;
 }
 .vintage-link:hover {

@@ -30,3 +30,21 @@
 .product-list-slider .slick-next {
   right: -25px;
 }
+
+@media (max-width: 768px) {
+  .product-list-slider .slick-prev {
+    left: 10px;
+  }
+  .product-list-slider .slick-next {
+    right: 10px;
+  }
+  .product-list-slider .slick-prev,
+  .product-list-slider .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .product-list-slider .slick-prev:before,
+  .product-list-slider .slick-next:before {
+    font-size: 16px;
+  }
+}

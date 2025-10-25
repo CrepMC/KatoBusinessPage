@@ -7,7 +7,7 @@ const ShippingPage = () => {
   }, []);
 
   return (
-    <div className='shipping-page-container vintage-card'>
+    <div className='shipping-page-container'>
       <div className='shipping-content'>
         <h1 className='page-title'>Chính sách Vận chuyển & Đổi trả</h1>
 
@@ -15,7 +15,8 @@ const ShippingPage = () => {
           <h2>1. Chính sách vận chuyển</h2>
           <p>
             KATO tự hào hợp tác với các đơn vị vận chuyển uy tín để đưa sản phẩm
-            đến tay quý khách một cách nhanh chóng và an toàn nhất trên toàn quốc.
+            đến tay quý khách một cách nhanh chóng và an toàn nhất trên toàn
+            quốc.
           </p>
           <ul>
             <li>
@@ -76,6 +77,29 @@ const ShippingPage = () => {
               <strong>Xử lý:</strong> Sau khi nhận và kiểm tra sản phẩm, chúng
               tôi sẽ tiến hành đổi sản phẩm mới hoặc hoàn tiền cho quý khách
               trong vòng 3-5 ngày làm việc.
+            </li>
+          </ol>
+          <h3>Quy trình đổi hàng (đổi size/mẫu khác/sản phẩm khác):</h3>
+          <p>
+            Khi Quý khách nhận được sản phẩm nhưng có nhu cầu đổi sang mẫu khác,
+            size khác, hoặc sản phẩm khác, vui lòng thực hiện theo quy trình
+            sau:
+          </p>
+          <ol>
+            <li>
+              Nhận hàng và thanh toán COD bình thường cho nhân viên giao hàng.
+            </li>
+            <li>
+              Liên hệ hotline của cửa hàng ngay sau khi nhận hàng để đăng ký đổi
+              sản phẩm.
+            </li>
+            <li>
+              Ở lần giao hàng tiếp theo, nhân viên giao hàng sẽ mang đến sản
+              phẩm mới Quý khách muốn đổi.
+            </li>
+            <li>
+              Phí COD bù trừ (nếu có chênh lệch) sẽ được hướng dẫn cụ thể qua
+              hotline trước khi giao hàng đổi.
             </li>
           </ol>
           <p className='note'>

@@ -45,7 +45,7 @@ const ProcessPage = () => {
   ];
 
   return (
-    <div className='process-page-container vintage-card'>
+    <div className='process-page-container'>
       <div className='process-content'>
         <h1 className='page-title'>Quy Trình Sản Xuất Tại KATO</h1>
         <p className='process-intro'>

@@ -1,11 +1,11 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* Background với texture giấy cũ */
 .HomePage.vintage {
-  background: url("https://www.transparenttextures.com/patterns/aged-paper.png");
+  background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
   background-color: #f4ecd8;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #3a2e2a;
   line-height: 1.8;
   min-height: 100vh;
@@ -13,7 +13,7 @@
 
 /* Retro heading */
 .vintage-title {
-  font-family: "Cinzel", serif;
+  font-family: 'CinCormorant Garamondzel', serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #4a2c2a;
@@ -22,7 +22,7 @@
 }
 
 .vintage-title::after {
-  content: "";
+  content: '';
   width: 100px;
   height: 4px;
   background: #a67c52;
@@ -47,17 +47,17 @@
   box-shadow: 0px 12px 35px rgba(60, 40, 20, 0.4);
 }
 
-/* Banner layout */
-.HomePage main .banner {
+/* about-banner layout */
+.HomePage main .about-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
   padding: 50px;
 }
 
-.HomePage main .banner .img-card img {
-  width: 280px;
+.HomePage main .about-banner .img-card img {
+  width: 270px;
   height: auto;
   border-radius: 50%;
   border: 5px double #8b5e3c;
@@ -66,19 +66,25 @@
   transition: all 0.3s ease;
 }
 
-.HomePage main .banner .img-card img:hover {
+.HomePage main .about-banner .img-card img:hover {
   filter: sepia(0.6) contrast(1.1) brightness(1.05);
-  transform: rotate(-2deg) scale(1.05);
+  transform: rotate(2deg) scale(1.05);
 }
 
-.inbanner-text {
+.inabout-banner-text {
   text-align: left;
   font-size: 1.5rem;
 }
 
+.banner img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 /* Retro text */
 .vintage-text {
-  font-family: "Special Elite", cursive;
+  font-family: 'Special Elite', cursive;
   font-size: 1.2rem;
   color: #3e2e28;
   background: #fff9f2;
@@ -127,7 +133,7 @@
 }
 
 .HomePage main .about-card .about-card-text {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   color: #3a2e2a;
 }
@@ -153,3 +159,96 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(40, 20, 10, 0.3);
 } */
+
+/* Team Preview Section */
+.team-preview-section {
+  text-align: center;
+}
+
+.team-preview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.team-preview-member {
+  text-align: center;
+  max-width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.team-preview-member:hover {
+  transform: scale(1.05);
+}
+
+.team-preview-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #b18f6a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+
+.team-preview-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #4a2c2a;
+  margin-bottom: 5px;
+}
+
+.team-preview-role {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #8b5e3c;
+}
+
+/* --- Responsive cho điện thoại --- */
+@media (max-width: 768px) {
+  .vintage-card {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  .HomePage main .about-banner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .HomePage main .about-banner .img-card img {
+    width: 200px;
+  }
+
+  .vintage-title {
+    font-size: 1.8rem;
+  }
+
+  .vintage-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vintage-card {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .vintage-title {
+    font-size: 1.5rem;
+  }
+
+  .HomePage main .about-banner {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .team-preview-grid {
+    gap: 20px;
+  }
+}

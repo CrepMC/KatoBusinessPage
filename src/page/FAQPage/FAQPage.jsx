@@ -35,9 +35,9 @@ const FAQPage = () => {
   }, []);
 
   return (
-    <div className='faq-page vintage-card'>
+    <div className='faq-page'>
       <div className='faq-container'>
-        <h1 className='faq-title'>Các câu hỏi thường gặp (FAQ)</h1>
+        <h1 className='faq-title'>Các câu hỏi thường gặp</h1>
         <div className='faq-list'>
           {faqs.map((faq, index) => (
             <details key={index} className='faq-item'>

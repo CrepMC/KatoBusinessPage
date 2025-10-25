@@ -2,6 +2,7 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import KatoLogo from '../../assests/logo2.png';
 
 const Header = () => {
   const navLinks = [
@@ -13,23 +14,28 @@ const Header = () => {
 
   return (
     <header className='main-header'>
-      <Link to="/">
-        <h1>KATO Shop</h1>
-      </Link>
-      <div className='header-handle'>
-        <div className='search-input'>
-          <input type='text' placeholder='Search...' />
-          <button className='search-button'>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </button>
+      <div className='header-container'>
+        <Link to='/'>
+          <div className='header-logo'>
+            <img src={KatoLogo} alt='' />
+            <h1>KATOShop</h1>
+          </div>
+        </Link>
+        <div className='header-handle'>
+          <div className='search-input'>
+            <input type='text' placeholder='Search...' />
+            <button className='search-button'>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </div>
+          <nav className='header-navigate'>
+            {navLinks.map((link, index) => (
+              <Link key={index} to={link.to}>
+                {link.text}
+              </Link>
+            ))}
+          </nav>
         </div>
-        <nav className='header-navigate'>
-          {navLinks.map((link, index) => (
-            <Link key={index} to={link.to}>
-              {link.text}
-            </Link>
-          ))}
-        </nav>
       </div>
     </header>
   );

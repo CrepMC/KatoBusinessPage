@@ -82,3 +82,30 @@ footer hr {
   justify-content: center;
   margin-top: 10px;
 }
+
+/* --- Responsive cho điện thoại --- */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-content > div {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 30px 20px;
+  }
+
+  .main-content h3 {
+    font-size: 16px;
+  }
+
+  .main-content p,
+  .main-content li {
+    font-size: 12px;
+  }
+}
