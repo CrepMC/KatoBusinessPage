@@ -18,7 +18,7 @@ const ProcessPage = () => {
       step: 2,
       title: 'Thiết kế & Tạo mẫu',
       description:
-        'Đội ngũ thiết kế của chúng tôi phác thảo những ý tưởng, kết hợp giữa nét đẹp cổ điển và xu hướng hiện đại. Các mẫu rập được tạo ra và thử nghiệm nhiều lần để đảm bảo sự vừa vặn và thoải mái tối đa.',
+        'Đội ngũ thiết kế sẽ phác thảo những ý tưởng, kết hợp giữa nét đẹp cổ điển và xu hướng hiện đại. Các mẫu rập được tạo ra và thử nghiệm nhiều lần để đảm bảo sự vừa vặn và thoải mái tối đa.',
       icon: 'fa-solid fa-compass-drafting',
     },
     {
@@ -49,9 +49,9 @@ const ProcessPage = () => {
       <div className='process-content'>
         <h1 className='page-title'>Quy Trình Sản Xuất Tại KATO</h1>
         <p className='process-intro'>
-          Để tạo ra những sản phẩm chất lượng và bền vững, KATO tuân thủ một
-          quy trình sản xuất nghiêm ngặt, kết hợp giữa công nghệ hiện đại và sự
-          khéo léo của đôi tay người thợ thủ công.
+          Để tạo ra những sản phẩm chất lượng và bền vững, cả quá trình sản xuất
+          cần tuân thủ một quy trình sản xuất nghiêm ngặt, kết hợp giữa công
+          nghệ hiện đại và sự khéo léo của đôi tay người thợ thủ công.
         </p>
         <div className='process-steps'>
           {steps.map((step) => (

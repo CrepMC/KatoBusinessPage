@@ -14,10 +14,15 @@ const ContactPage = () => {
       content: <a href='tel:098 669 70 86'>098 669 70 86</a>,
     },
     {
+      icon: 'fa-solid fa-envelope',
+      label: 'Email:',
+      content: <a href='mailto:kato86nxq@gmail.com'>kato86nxq@gmail.com</a>,
+    },
+    {
       icon: 'fa-solid fa-globe',
       label: 'Website:',
       content: (
-        <a href='https://kato.net.vn' target='_blank' rel='noreferrer'>
+        <a href='https://kato.net.vn' rel='noreferrer'>
           kato.net.vn
         </a>
       ),

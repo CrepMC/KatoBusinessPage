@@ -5,9 +5,14 @@ const PrivacyPolicy = () => {
     <>
       <section
         id='privacy-policy'
-        style={{maxWidth: '800px', margin: '40px auto', fontFamily: 'sans-serif', lineHeight: '1.6'}}
+        style={{
+          maxWidth: '800px',
+          margin: '40px auto',
+          fontFamily: 'sans-serif',
+          lineHeight: '1.6',
+        }}
       >
-        <h2 style={{textAlign: 'center'}}>
+        <h2 style={{ textAlign: 'center' }}>
           Privacy Policy / Chính sách quyền riêng tư
         </h2>
 
@@ -42,14 +47,20 @@ const PrivacyPolicy = () => {
 
         <p>
           If you have any questions or concerns regarding your privacy, feel
-          free to contact us at email: 
-          <a href='mailto:ducnhan02022009@gmail.com'>
-            ducnhan02022009@gmail.com
+          free to contact us at email:&nbsp;
+          <a href='mailto:kato86nxq@gmail.com'>
+            kato86nxq@gmail.com
           </a>
           .
         </p>
 
-        <hr style={{margin: '30px 0', border: 'none', borderTop: '1px solid #ccc'}} />
+        <hr
+          style={{
+            margin: '30px 0',
+            border: 'none',
+            borderTop: '1px solid #ccc',
+          }}
+        />
 
         <p>
           <br />
@@ -82,9 +93,9 @@ const PrivacyPolicy = () => {
 
         <p>
           Nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào liên quan đến quyền riêng
-          tư, vui lòng liên hệ với chúng tôi qua email: 
-          <a href='mailto:ducnhan02022009@gmail.com'>
-            ducnhan02022009@gmail.com
+          tư, vui lòng liên hệ với chúng tôi qua email:&nbsp;
+          <a href='mailto:kato86nxq@gmail.com'>
+            kato86nxq@gmail.com
           </a>
           .
         </p>
