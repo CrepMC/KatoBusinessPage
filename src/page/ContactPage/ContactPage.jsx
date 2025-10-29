@@ -11,7 +11,7 @@ const ContactPage = () => {
     {
       icon: 'fa-solid fa-phone',
       label: 'ĐT:',
-      content: <a href='tel:098 669 70 86'>098 669 70 86</a>,
+      content: <a href='tel:0979 021 450'>0979 021 450</a>,
     },
     {
       icon: 'fa-solid fa-envelope',
@@ -68,8 +68,7 @@ const ContactPage = () => {
           </div>
           <div className='contact-map'>
             <iframe
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.693350995161!2d105.92754447592205!3d21.0049334884242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a96394055555%3A0x39a86d039555351!2zMTY0IE5nLiDEkC4gTmfDtCBZdXhuIiBEdOG7i2EsIFRyxrDDonUgUXXhu7MsIEdpYSBMw6JtLCBIw6AgTuG7mWksIFZp4buHdG5hbQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s'
-              width='600'
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.857477631941!2d105.9365823!3d21.015671899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a8c49132e315%3A0x5a2d370534463c35!2zMTY0IFAuIE5nLiBYdcOibiBRdeG6o25nLCBUcsOidSBRdeG7sywgR2lhIEzDom0sIEjDoCBO4buZaQ!5e1!3m2!1svi!2s!4v1761737999409!5m2!1svi!2s"
               height='450'
               style={{ border: 0 }}
               allowFullScreen=''
